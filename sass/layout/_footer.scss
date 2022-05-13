@@ -1,0 +1,136 @@
+.footer {
+  height: 35rem;
+  padding-top: 4rem;
+  font-family: Georgia, Times, Times New Roman, serif;
+  font-size: 2rem;
+  color: $color-primary;
+
+  @media (max-width: $tablet-size) {
+    height: auto;
+    padding-top: 2.9rem;
+  }
+
+  &__background {
+    background: $color-background;
+    background: url('../assets/images/noise_transparent@2x.png') repeat, radial-gradient(
+      110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%
+    );
+  }
+
+  &__contacts {
+    width: 27.8rem;
+    height: 23.4rem;
+    margin-bottom: 4.3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+
+    @media (max-width: $tablet-size) {
+      margin-right: 6rem;
+    }
+
+    @media (max-width: $phone-size) {
+      width: 100%;
+      height: 20.9rem;
+      margin-right: 0;
+      margin-bottom: 4rem;
+      padding: 0 2.4rem;
+      text-align: center;
+    }
+  }
+  .title {
+    color: $color-light-xl;
+  }
+
+  &__phone {
+
+    @media (max-width: $phone-size) {
+      padding: 0 0.6rem;
+    }
+
+    & .number {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      gap: 0.8rem;
+    }
+  }
+
+  &__location {
+    width: 30.2rem;
+    height: 23.4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: $tablet-size) {
+      margin-bottom: 4.1rem;
+    }
+
+    @media (max-width: $phone-size) {
+     width: 100%;
+     height: 22.2rem;
+     margin-bottom: 1.7rem;
+     text-align: center;
+    }
+
+    & .footer__title {
+      @media (max-width: $phone-size) {
+        width: 23rem;
+        margin: 0 auto;
+       }
+    }
+  }
+
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.113rem;
+
+    @media (max-width: $phone-size) {
+      justify-content: space-between;
+    }
+
+    & img {
+      margin-right: 2rem;
+
+      @media (max-width: $phone-size) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__image {
+    display: flex;
+
+    @media (max-width: $tablet-size) {
+      padding-top: 2.3rem;
+    }
+
+    & img {
+      @media (max-width: $phone-size) {
+        max-width: 26rem;
+      }
+    }
+  }
+}
+
+.contact-location {
+  @media (max-width: $phone-size) {
+    justify-content: flex-start;
+  }
+
+  & img {
+    @media (max-width: $phone-size) {
+      margin-right: 2.1rem;
+    }
+  }
+
+  & span {
+    @media (max-width: $phone-size) {
+     text-align: left;
+    }
+  }
+}
+

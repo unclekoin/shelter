@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// html,
+// body {
+//   overflow-x: hidden;
+// }
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none !important;
+}

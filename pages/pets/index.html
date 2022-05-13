@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/icons/favicon.png"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Our Pets</title>
+  </head>
+  <body>
+    <div class="container container-pets">
+      <header class="header header-pets">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <h1 class="header__title header-pets__title">
+                <a href="../main/index.html">Cozy House</a>
+              </h1>
+              <div class="header__subtitle header-pets__subtitle">Shelter for pets in Boston</div>
+            </div>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__link header-pets__link" href="../main/index.html">
+                  <span>About the shelter</span>
+                  <span class="header__link-border"></span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__link header-pets__link active" href="../pets/index.html">
+                  <span>Our pets</span>
+                  <span class="header__link-border active"></span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__link header-pets__link" href="../main/index.html#help">
+                  <span>Help the shelter</span>
+                  <span class="header__link-border"></span>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__link header-pets__link" href="#contacts">
+                  <span>Contacts</span>
+                  <span class="header__link-border"></span>
+                </a>
+              </li>
+            </ul>
+            <button class="header__burger">
+              <span class="burger burger-pets">
+                <span class="burger__line burger-pets__line"></span>
+                <span class="burger__line burger-pets__line"></span>
+                <span class="burger__line burger-pets__line"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="main">
+      <div class="background-grey">
+        <div class="container">
+          <section class="our-friends our-friends_pets">
+            <h3 class="title our-friends__title our-friends__title_pets">Our friends who are&nbsp;looking for a house</h3>
+            <div class="our-friends__list" id="card-list"></div>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <button class="btn btn-outline btn-circle" id="start" disabled>
+                  <svg width="25" height="11" viewBox="0 0 25 11" fill="#292929" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.94687 10.7852L0.913671 6.08789V4.98438L9.94687 0.287109V1.625L2.43711 5.53125L9.94687 9.44727V10.7852ZM24.018 10.7852L14.9848 6.08789V4.98438L24.018 0.287109V1.625L16.5082 5.53125L24.018 9.44727V10.7852Z"/>
+                    </svg>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button class="btn btn-outline btn-circle" disabled id="left">
+                  <svg width="10" height="11" viewBox="0 0 10 11"  fill="#292929" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.98242 10.7852L0.949219 6.08789V4.98438L9.98242 0.287109V1.625L2.47266 5.53125L9.98242 9.44727V10.7852Z"/>
+                    </svg>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button class="btn btn-outline btn-circle pagination__current-item" id="number">1</button>
+              </li>
+              <li class="pagination__item">
+                <button class="btn btn-outline btn-circle" id="right">
+                  <svg width="10" height="11" viewBox="0 0 10 11" fill="#292929" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.04102 6.08789L0.0078125 10.7852V9.44727L7.51758 5.53125L0.0078125 1.625V0.287109L9.04102 4.98438V6.08789Z"/>
+                    </svg>
+                </button>
+              </li>
+              <li class="pagination__item">
+                <button class="btn btn-outline btn-circle" id="end">
+                  <svg width="25" height="11" viewBox="0 0 25 11" fill="#292929" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0055 6.08789L0.972265 10.7852V9.44727L8.48203 5.53125L0.972265 1.625V0.287109L10.0055 4.98438V6.08789ZM24.0766 6.08789L15.0434 10.7852V9.44727L22.5531 5.53125L15.0434 1.625V0.287109L24.0766 4.98438V6.08789Z"/>
+                    </svg>
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+    <div class="footer__background">
+      <footer class="footer" id="contacts">
+        <div class="container container-flex container-space-between container-wrap">
+          <div class="footer__contacts">
+            <h3 class="title footer__title">For questions and suggestions</h3>
+            <a href="mailto:email@shelter.com" class="footer__email footer__contact">
+              <img src="../../assets/icons/icon-email.svg" alt="icon" />
+              <span>email@shelter.com</span>
+            </a>
+            <a href="tel:+136745677554" class="footer__phone footer__contact">
+              <img src="../../assets/icons/icon-phone.svg" alt="" />
+              <span class="nummber">
+                <span>+13</span>
+                <span>674</span>
+                <span>567</span>
+                <span>75</span>
+                <span>54</span>
+              </span>
+            </a>
+          </div>
+          <div class="footer__location">
+            <h3 class="title footer__title">We are waiting for your visit</h3>
+            <a class="footer__contact contact-location" href="https://goo.gl/maps/TxQmWVyyuyqEj9vs7" target="_blank">  
+              <img src="../../assets/icons/icon-marker.svg" alt="icon marker" />
+              <span>1 Central Street, Boston (entrance from the store)</span>
+            </a>
+            <a class="footer__contact contact-location" href="https://goo.gl/maps/o16KL5GmUKwc5TJt8" target="_blank">
+              <img src="../../assets/icons/icon-marker.svg" alt="icon marker" />
+              <span>18 South Park, London</span>
+            </a>
+          </div>
+          <div class="footer__image">
+            <img src="../../assets//images/footer-puppy.png" alt="puppy" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay popup-overlay"></div>
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-menu__logo-block">
+          <div class="header__logo">
+            <h1 class="header__title">
+              <a href="../main/index.html">Cozy House</a>
+            </h1>
+            <div class="header__subtitle">Shelter for pets in Boston</div>
+          </div>
+          <button class="header__burger">
+            <span class="burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </span>
+          </button>
+        </div>
+        <ul class="mobile-menu__nav-list">
+          <li class="mobile-menu__nav-item">
+            <a class="header__link mobile-menu__link" href="../main/index.html">
+              <span>About the shelter</span>
+              <span class="header__link-border"></span>
+            </a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="header__link mobile-menu__link active" href="../pets/index.html">
+              <span>Our pets</span>
+              <span class="header__link-border active"></span>
+            </a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="header__link mobile-menu__link" href="../main/index.html#help">
+              <span>Help the shelter</span>
+              <span class="header__link-border"></span>
+            </a>
+          </li>
+          <li class="mobile-menu__nav-item">
+            <a class="header__link mobile-menu__link anchor" href="#contacts">
+              <span>Contacts</span>
+              <span class="header__link-border"></span>
+            </a>
+          </li>
+        </ul>
+      </div>      
+    </div>
+    <div class="popup"></div>
+    <script src="../../js/mobile-menu.js"></script>
+    <script type="module" src="../../js/popup.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

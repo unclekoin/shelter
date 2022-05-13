@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $phone-size) {
+    justify-content: space-between;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+
+      @media (max-width: $phone-size) {
+        margin: 0;
+      }
+    }   
+  }
+
+  &__current-item {
+    background-color: $color-primary;
+    cursor: auto;
+
+    &:hover,
+    &:active {
+      background-color: $color-primary;
+      border-color: $color-primary;
+    }
+  }
+  
+}
